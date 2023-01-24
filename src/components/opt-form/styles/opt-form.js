@@ -23,7 +23,7 @@ export const Input = styled.input`
 export const Button = styled.button`
     display: flex;
     align-items: center;
-    height: 100%;
+    height: 70px;
     background: #e50914;
     color: white;
     text-transform: uppercase;
@@ -32,6 +32,17 @@ export const Button = styled.button`
     border: 0;
     cursor: pointer;
     
+    &:hover {
+        background: #f40612;
+    }
+
+    @media (max-width: 1000px) {
+        height: 50px;
+        font-size: 1t6px;
+        margin-top: 20px;
+        font-weight: bold;
+    }
+
     img{
         margin-left: 10px;
         filter: brightness(0) invert(1);
@@ -43,4 +54,13 @@ export const Button = styled.button`
     }
     `;
 
-export const Text = styled.p``;
+export const Text = styled.p`
+    font-size: 10.2px;
+    color: white;
+    text-align: center;
+    `;
+
+export const Break = styled.div`
+    flex-basis: 100%;
+    height: 0;
+    `;
