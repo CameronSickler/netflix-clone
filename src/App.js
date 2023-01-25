@@ -7,18 +7,18 @@ export default function App() {
   return (
 
     <Router>
-      <Route exact path="/browse" >
+      <div exact path="/browse" >
         <Browse />
-      </Route>
-      <Route exact path="/signin" >
+      </div>
+      <div exact path="/signin" >
         <Signin />
-      </Route>
-      <Route exact path="/signup" >
+      </div>
+      <div exact path="/signup" >
         <Signup />
-      </Route>
-      <Route exact path={ROUTES.HOME}>
+      </div>
+      <div exact path={ROUTES.HOME}>
         <Home />
-      </Route>
+      </div>
     </Router>
 
   );
