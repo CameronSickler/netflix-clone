@@ -17,7 +17,7 @@ import React, { StrictMode } from 'react';
 import ReactDOM from 'react-dom/client';
 // import { render } from 'react-dom';
 import 'normalize.css';
-import App from './App';
+import App from './app';
 import { GlobalStyles } from './global-styles';
 
 let root = ReactDOM.createRoot(document.getElementById('root'));
