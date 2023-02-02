@@ -38,7 +38,7 @@ export const Button = styled.button`
 
     @media (max-width: 1000px) {
         height: 50px;
-        font-size: 1t6px;
+        font-size: 16px;
         margin-top: 20px;
         font-weight: bold;
     }
@@ -58,6 +58,11 @@ export const Text = styled.p`
     font-size: 10.2px;
     color: white;
     text-align: center;
+    
+    @media (max-width: 600px) {
+        font-size: 16px;
+        line-height: 22px;
+    }
     `;
 
 export const Break = styled.div`
