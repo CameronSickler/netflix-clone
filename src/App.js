@@ -17,19 +17,3 @@ export default function App() {
 
   );
 }
-
-
-{/* <Router>
-<div exact path={ROUTES.HOME}>
-  <Home />
-</div>
-<div exact path="/browse" >
-  <Browse />
-</div>
-<div exact path="/signin" >
-  <Signin />
-</div>
-<div exact path="/signup" >
-  <Signup />
-</div>
-</Router> */}
