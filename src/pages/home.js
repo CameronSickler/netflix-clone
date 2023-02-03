@@ -1,5 +1,5 @@
 import React from 'react';
-import { OptForm } from '../components';
+import { Feature, OptForm } from '../components';
 import { HeaderContainer } from '../containers/header';
 import { FaqsContainer } from '../containers/faqs';
 import { FooterContainer } from '../containers/footer'
@@ -9,6 +9,12 @@ export default function Home() {
     return (
         <>
             <HeaderContainer>
+                <Feature>
+                    <Feature.Title>Unlimited films, TV programs and more.</Feature.Title>
+                    <Feature.SubTitle>
+                        Watch anywhere. Cancel at anytime.
+                    </Feature.SubTitle>
+                </Feature>
                 <OptForm>
                     <OptForm.Input placeholder="Email address" />
                     <OptForm.Button>Try it now</OptForm.Button>
