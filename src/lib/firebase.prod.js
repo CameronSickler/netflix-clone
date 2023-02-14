@@ -1,29 +1,22 @@
-import { initializeApp } from 'firebase/app';
-import 'firebase/firestore';
+import * as firebase from 'firebase/app';
 import 'firebase/auth';
-import { seedDatabase } from '../seed';
+import 'firebase/firestore';
+// import { seedDatabase } from '../seed';
 
-const API_KEY = process.env.REACT_APP_API_KEY
-const APP_AUTHDOMAIN = process.env.REACT_APP_AUTHDOMAIN
-const APP_PROJECT_ID = process.env.REACT_APP_PROJECT_ID
-const APP_STORAGE_BUCKET = process.env.REACT_APP_STORAGE_BUCKET
-const APP_MESSAGING_SENDER_ID = process.env.REACT_APP_MESSAGING_SENDER_ID
-const APP_APP_ID = process.env.REACT_APP_APP_ID
-
-const config = {
-    apiKey: API_KEY,
-    authDomain: APP_AUTHDOMAIN,
-    projectId: APP_PROJECT_ID,
-    storageBucket: APP_STORAGE_BUCKET,
-    messagingSenderId: APP_MESSAGING_SENDER_ID,
-    appId: APP_APP_ID
+const firebaseConfig = {
+    apiKey: process.env.REACT_APP_FIREBASE_API_KEY,
+    authDomain: process.env.REACT_APP_FIREBASE_AUTHDOMAIN,
+    projectId: process.env.REACT_APP_FIREBASE_PROJECT_ID,
+    storageBucket: process.env.REACT_APP_FIREBASE_STORAGE_BUCKET,
+    messagingSenderId: process.env.REACT_APP_FIREBASE_MESSAGING_SENDER_ID,
+    appId: process.env.REACT_APP_FIREBASE_APP_ID
 };
 
-const firebase = initializeApp(config);
+const db = firebase.initializeApp(firebaseConfig);
+// firebase.firestore();
+// seedDatabase(db);
 
-seedDatabase(firebase);
-
-export { firebase };
+export default firebase;
 
 
 

@@ -19,7 +19,7 @@ import ReactDOM from 'react-dom/client';
 import 'normalize.css';
 import App from './app';
 import { GlobalStyles } from './global-styles';
-import { firebase } from "./lib/firebase.prod";
+import firebase from "./lib/firebase.prod";
 
 
 let root = ReactDOM.createRoot(document.getElementById('root'));
