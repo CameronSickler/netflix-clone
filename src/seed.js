@@ -1,5 +1,4 @@
 
-
 export function seedDatabase(firebase) {
     function getUUID() {
         // eslint gets funny about bitwise
@@ -301,7 +300,7 @@ export function seedDatabase(firebase) {
         id: getUUID(),
         title: 'Shutter Island',
         description:
-            'Teddy Daniels and Chuck Aule, two US marshals, are sent to an asylum on a remote island in order to investigate the disappearance of a patient, where Teddy uncovers a shocking truth about the place.',
+            'Teddy Daniels and Chuck Aule, two US marshals, are sent to an asylum on a remote island in order to investigate the disarance of a patient, where Teddy uncovers a shocking truth about the place.',
         genre: 'suspense',
         maturity: '15',
         slug: 'shutter-island',
@@ -310,7 +309,7 @@ export function seedDatabase(firebase) {
         id: getUUID(),
         title: 'Gone Girl',
         description:
-            'Nick Dunne discovers that the entire media focus has shifted on him when his wife Amy Dunne disappears on the day of their fifth wedding anniversary.',
+            'Nick Dunne discovers that the entire media focus has shifted on him when his wife Amy Dunne disars on the day of their fifth wedding anniversary.',
         genre: 'suspense',
         maturity: '15',
         slug: 'gone-girl',
@@ -328,7 +327,7 @@ export function seedDatabase(firebase) {
         id: getUUID(),
         title: 'Seven',
         description:
-            'A serial killer begins murdering people according to the seven deadly sins. Two detectives, one new to the city and the other about to retire, are tasked with apprehending the criminal.',
+            'A serial killer begins murdering people according to the seven deadly sins. Two detectives, one new to the city and the other about to retire, are tasked with ehending the criminal.',
         genre: 'suspense',
         maturity: '15',
         slug: 'seven',
@@ -431,7 +430,7 @@ export function seedDatabase(firebase) {
         id: getUUID(),
         title: 'The Silence of The Lambs',
         description:
-            'Clarice Starling, an FBI agent, seeks help from Hannibal Lecter, a psychopathic serial killer and former psychiatrist, in order to apprehend another serial killer who has been claiming female victims.',
+            'Clarice Starling, an FBI agent, seeks help from Hannibal Lecter, a psychopathic serial killer and former psychiatrist, in order to ehend another serial killer who has been claiming female victims.',
         genre: 'thriller',
         maturity: '15',
         slug: 'the-silence-of-the-lambs',

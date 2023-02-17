@@ -1,9 +1,9 @@
-import * as firebase from 'firebase/app';
-import 'firebase/auth';
-import 'firebase/firestore';
-// import { seedDatabase } from '../seed';
+import { initializeApp } from 'firebase/app';
+import "firebase/auth";
+import { getFirestore } from 'firebase/firestore';
+import { seedDatabase } from '../seed';
 
-const firebaseConfig = {
+const config = {
     apiKey: process.env.REACT_APP_FIREBASE_API_KEY,
     authDomain: process.env.REACT_APP_FIREBASE_AUTHDOMAIN,
     projectId: process.env.REACT_APP_FIREBASE_PROJECT_ID,
@@ -12,11 +12,18 @@ const firebaseConfig = {
     appId: process.env.REACT_APP_FIREBASE_APP_ID
 };
 
-const db = firebase.initializeApp(firebaseConfig);
-// firebase.firestore();
-// seedDatabase(db);
+// const auth = getAuth(firebaseApp);
+// onAuthStateChanged(auth, user => {
+//     // Check for user status
+// });
 
-export default firebase;
+const firebase = initializeApp(config);
+
+const db = getFirestore(firebase);
+
+seedDatabase(db);
+
+export { firebase };
 
 
 
